@@ -501,26 +501,49 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label name="user-name">
-            Name
-            <input type="text" class="modal-input" />
-          </label>
-          <label name="user-phone">
-            Phone
-            <input type="tel" class="modal-input" />
-          </label>
-          <label name="user-email">
-            Email
-            <input type="email" class="modal-input" />
-          </label>
-          <label name="comment">
-            Comment
-            <textarea name="user-comment" id="" cols="30" rows="10"></textarea>
-          </label>
+          <div>
+            <label for="user-name" class="modal-lable">Name</label>
+            <input
+              name="user-name"
+              id="user-name"
+              type="text"
+              class="modal-input"
+            />
+          </div>
+          <div>
+            <label for="user-phone" class="modal-lable">Phone</label>
+            <input
+              name="user-phone"
+              id="user-phone"
+              type="tel"
+              class="modal-input"
+            />
+          </div>
+          <div>
+            <label for="user-email" class="modal-lable">Email</label>
+            <input
+              name="user-email"
+              id="user-email"
+              type="email"
+              class="modal-input"
+            />
+          </div>
+          <div>
+            <label for="user-comment" class="modal-lable">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <input type="checkbox" />
           <label name=""
-            ><input type="checkbox" placeholder="Text input" />I accept the
-            terms and conditions of the <a href="">Privacy Policy</a></label
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a></label
           >
+
           <button type="submit">Send</button>
         </form>
       </div>
