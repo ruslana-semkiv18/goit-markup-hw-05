@@ -744,13 +744,13 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-check-text span {
+.modal-check-text .span {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  display: flex;
+  display: inine-flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
