@@ -533,13 +533,12 @@ img {
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -553,7 +552,8 @@ img {
 }
 
 .footer-form-icon {
-  fill: #fff;
+  fill: #ffffff;
+  margin-left: 16px;
 }
 
 /*-------Modal-------*/
@@ -597,6 +597,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
@@ -609,7 +612,8 @@ img {
   background-color: #e7e9fc;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -623,6 +627,7 @@ img {
 .modal-close:focus,
 .modal-close:hover {
   background-color: #404bbf;
+  border: none;
 }
 
 .modal-close:focus .modal-close-icon,
@@ -635,6 +640,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #2e2f42;
   display: block;
   margin-bottom: 16px;
 }
@@ -660,7 +666,7 @@ img {
   padding-bottom: 4px;
   width: 100%;
   height: 40px;
-  background-color: transparent;
+  outline: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -700,10 +706,11 @@ img {
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  background: transparent;
+  outline: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
