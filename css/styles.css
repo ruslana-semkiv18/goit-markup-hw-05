@@ -511,6 +511,7 @@ img {
   width: 264px;
   height: 40px;
   background-color: transparent;
+  outline: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding-top: 8px;
   padding-bottom: 8px;
@@ -750,7 +751,7 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  display: inine-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
